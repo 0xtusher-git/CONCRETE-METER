@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const shareBtn = document.getElementById('share-btn');
 
     const tiers = [
-        { name: 'Stone', icon: '🪨', min: 1, max: 3 },
+        { name: 'Stone', icon: '🧱', min: 1, max: 3 },
         { name: 'Iron', icon: '🔩', min: 4, max: 10 },
         { name: 'Steel', icon: '⚙️', min: 11, max: 25 },
         { name: 'Architect', icon: '🏗️', min: 26, max: 50 },
