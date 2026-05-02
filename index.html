@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConcreteMeter - Check your on-chain voice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Hero Section -->
+        <header class="hero">
+            <img src="assets/logo.png" alt="Concrete Logo" class="hero-logo">
+            <h1>How loud are you on Concrete?</h1>
+            <p>Check your on-chain voice — enter your X username to get your Concrete Supporter Tier.</p>
+        </header>
+
+        <!-- Input Section -->
+        <section class="input-section">
+            <form id="check-form">
+                <div class="input-wrapper">
+                    <span class="at-symbol">@</span>
+                    <input type="text" id="username" placeholder="yourusername" required autocomplete="off">
+                </div>
+                <button type="submit" class="cta-button" id="submit-btn">
+                    <span class="btn-text">Check My Tier</span>
+                    <span class="spinner hidden"></span>
+                </button>
+            </form>
+            <div id="error-message" class="error-message hidden"></div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section hidden" id="results">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="avatar-placeholder" id="avatar"></div>
+                    <div class="profile-info">
+                        <h2 id="display-name">User Name</h2>
+                        <p id="handle">@username</p>
+                    </div>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-box">
+                        <span class="stat-label">Mentions of @ConcreteXYZ</span>
+                        <span class="stat-value" id="tweet-count">0</span>
+                    </div>
+                </div>
+                <div class="tier-container" id="tier-badge-container">
+                    <div class="tier-badge" id="tier-badge">
+                        <span class="tier-icon" id="tier-icon"></span>
+                        <span class="tier-name" id="tier-name">Tier Name</span>
+                    </div>
+                </div>
+                <button class="share-button" id="share-btn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" class="x-icon"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.008 5.961h-1.92z"></path></svg>
+                    Share on X
+                </button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-divider"></div>
+            <img src="assets/logo.png" alt="Concrete Logo" class="footer-logo">
+            <div class="footer-links">
+                <a href="#" target="_blank">@ConcreteXYZ on X</a>
+                <a href="#" target="_blank">Concrete Website</a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
